@@ -1,0 +1,58 @@
+<!--Create a form using HTML which has the following types of controls: (i) Text Box (ii) Option/radio buttons (iii) Check boxes (iv) Reset and Submit Buttons.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body{
+        background-color: rgb(126, 132, 132);
+        border: 2px solid red;
+        width: 98.7%;
+        height: 100%;
+        text-align: var(Html-assignment) width=95% heigth=98%;
+    }
+</style>
+<body>
+    <h1>Subscribe to XYZ News Magazine and Emails</h1>
+    <Textbox>
+        Interested in receiving daily small update of all latest News? Well, now you can . And best of all, it is free! Just fill out this form and submit it by clicking the "send it In" button. We will put you on our mailing list and you will receive your first email in 3-5 days.
+        Please fill the following boxes to help us send the emails and our news letter.
+    </Textbox><hr>
+    <form action="Html-assignment">
+        <label for="Fname">First Name:</label>
+        <input type="text" required="First Name"><br>
+        <label for="Lname">Last Name:</label>
+        <input type="text" required="Last Name"><br>
+        <label for="Pname">Business:</label>
+        <input type="text"><br>
+        <p>We must have a correct e-mail address to send you the news letter.</p>
+        <label for="Email">Email:</label>
+        <input type="text" placeholder="Email" required="Email"><br>
+        <p>
+            How did you hear about XYZ News Magazine and Emails?
+        </p>
+        <input type="radio" id="Here on the Web" name="Choice" value="Option" required="Here on the Web">
+        <label for="Here on the Web">Here on the Web</label>
+        <input type="radio" id="In a Magazine" name="Choice" value="Option" required="In a Magazine">
+        <label for="In a Magazine">In a Magazine</label>
+        <input type="radio" id="Television" name="Choice" value="Option" required="Television">
+        <label for="Television">Television</label>
+        <input type="radio" id="Other" name="Choice" value="Option" required="Other">
+        <label for="Other">Other</label>
+    
+    
+        <p>
+            Would you like to be on our regular list?
+        </p>
+        
+        <input type="checkbox" id="Yes, we love junk emails" name="Select" value="Select" required="Yes, we love junk emails">
+        <label for="Yes, we love junk emails">Yes, we love junk emails</label><hr>
+    
+    <input type="Reset" value="Reset">
+    <input type="submit"value="Send it in" onclick="send">
+    </form>
+</body>
+</html>
